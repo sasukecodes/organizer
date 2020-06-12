@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="projectmain.MainPage">
+
+    
+        <ScrollView x:Name="scrollb" BackgroundColor="Blue" Orientation="Both">
+            <Grid x:Name="gridtable">
+                <!-- Place new controls here 
+        <Label Text="Welcome to Xamarin.Forms!" 
+           HorizontalOptions="Center"
+           VerticalOptions="Start" /> -->
+
+                <Grid.ColumnDefinitions>
+
+                    <ColumnDefinition Width="50" />
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="100" />
+
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="100" />
+                    <RowDefinition Height="100" />
+                    <RowDefinition Height="700"/>
+                </Grid.RowDefinitions>
+
+
+            <ImageButton Source="minion"
+            Grid.Row="0" Grid.Column="1"
+            Clicked="OnminionButtonClicked" />
+
+            <ImageButton Source="wearables"
+            Grid.Row="0" Grid.Column="2"
+            Clicked="OnwearablesButtonClicked" />
+
+            <ImageButton Source="house"
+            Grid.Row="0" Grid.Column="3"
+            Clicked="OnhouseButtonClicked" />
+
+            <ImageButton Source="transport"
+            Grid.Row="0" Grid.Column="4"
+            Clicked="OntransportButtonClicked" />
+
+            <ImageButton Source="office"
+            Grid.Row="0" Grid.Column="5"
+            Clicked="OnofficeButtonClicked" />
+
+
+
+                <ListView x:Name="meList" BackgroundColor="MediumPurple"
+                  Grid.Row="2" Grid.Column="1">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell Height="30">
+                                <StackLayout Padding="5">
+                                    <Label Text="{Binding Name}" />
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+                <ListView x:Name="wearableList" BackgroundColor="Aqua"
+                  Grid.Row="2" Grid.Column="2">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell Height="30">
+                                <StackLayout Padding="5">
+                                    <Label Text="{Binding Name}" />
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+                <ListView x:Name="homeList" BackgroundColor="LightGreen"
+                 Grid.Row="2" Grid.Column="3">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell Height="30">
+                                <StackLayout Padding="5">
+                                    <Label Text="{Binding Name}" />
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+                <ListView x:Name="transportList" BackgroundColor="Yellow"
+                  Grid.Row="2" Grid.Column="4">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell Height="30">
+                                <StackLayout Padding="5">
+                                    <Label Text="{Binding Name}" />
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+                <ListView x:Name="officeList" BackgroundColor="OrangeRed"
+                  Grid.Row="2" Grid.Column="5">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell Height="30">
+                                <StackLayout Padding="5">
+                                    <Label Text="{Binding Name}" />
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+        </Grid>
+        </ScrollView>
+   
+
+</ContentPage>

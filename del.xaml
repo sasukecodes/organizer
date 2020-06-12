@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="projectmain.del">
+    <ContentPage.Content>
+        <Grid x:Name="deletegrid" BackgroundColor="LightPink" >
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="150"/>
+                <RowDefinition Height="100"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            
+            <!--
+            <ImageButton Source="minion"
+            Grid.Row="0" Grid.Column="0"
+            Clicked="OnminionButtonClicked" />
+
+            <ImageButton Source="wearables"
+            Grid.Row="0" Grid.Column="1"
+            Clicked="OnwearablesButtonClicked" />
+
+            <ImageButton Source="house"
+            Grid.Row="1" Grid.Column="0"
+            Clicked="OnhouseButtonClicked" />
+
+            <ImageButton Source="transport"
+            Grid.Row="1" Grid.Column="1"
+            Clicked="OntransportButtonClicked" />
+
+            <ImageButton Source="office"
+            Grid.Row="2" Grid.Column="0"
+            Clicked="OnofficeButtonClicked" />
+
+            <Button x:Name="deletefinal"
+            Grid.Row="4" Grid.Column="0"
+            Grid.ColumnSpan="2"
+            Clicked="OnfinaldeleteClicked"/>
+
+            <Picker x:Name=" delpicker"
+            Grid.Row="3" Grid.Column="0"
+            Grid.ColumnSpan="2"
+            ItemDisplayBinding="{Binding Name}"/>
+
+            -->
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
